@@ -7,8 +7,11 @@ For example, translate("this is fun") should return the string
 """
 
 #Is there a way to be more simple?
-
 def translate(string):
+	# uhh... this is ugly
+	return ''.join([''.join([letter, 'o', letter]) if letter not in 'ae iou' else ''.join(letter) for letter in string])
+
+def translate2(string):
 	newString = ''
 	for letter in string:
 		if letter not in 'ae iou':

@@ -4,7 +4,6 @@ all the numbers in a list of numbers.
 For example, sum([1, 2, 3, 4]) should return 10, 
 and multiply([1, 2, 3, 4]) should return 24.
 """
-
 def sum(numberList):
 	sum = 0
 	for number in numberList:
