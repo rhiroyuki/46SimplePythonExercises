@@ -9,11 +9,11 @@ import testModule
 
 def translate(phrase):
 	translation = {"merry":"god", "christmas":"jul", "and":"och", "happy":"gott", "new":"nytt", "year":"år"}
-	lista = phrase.lower().split()
-	resultado = []
-	for word in lista:
-		resultado.append(translation[word])
-	return " ".join(resultado)
+	listPhrase = phrase.lower().split()
+	result = []
+	for word in listPhrase:
+		result.append(translation[word])
+	return " ".join(result)
 
 if __name__ == '__main__':
 	test = testModule.UnitTester()
