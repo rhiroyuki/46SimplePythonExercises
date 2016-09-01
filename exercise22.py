@@ -15,10 +15,10 @@ def caeserROT13(inputStr):
 
 if __name__ == '__main__':
     test = testModule.UnitTester()
-    test.do_test(caeserROT13('a'), 'n')
-    test.do_test(caeserROT13('a '), 'n ')
-    test.do_test(caeserROT13('Pnrfne pvcure? V zhpu cersre Pnrfne fnynq!'), 'Caesar cipher? I much prefer Caesar salad!')
-    test.do_test(caeserROT13('!!!!!!!!!!!!!!!!!!'), '!!!!!!!!!!!!!!!!!!')
-    test.do_test(caeserROT13(''), '')
-    test.do_test(caeserROT13('1234567890'), '1234567890')
-    test.do_test(caeserROT13('abcde'), 'nopqr')
+    test.do_test(caeserROT13, 'a', 'n')
+    test.do_test(caeserROT13, 'a ', 'n ')
+    test.do_test(caeserROT13,'Pnrfne pvcure? V zhpu cersre Pnrfne fnynq!', 'Caesar cipher? I much prefer Caesar salad!')
+    test.do_test(caeserROT13,'!!!!!!!!!!!!!!!!!!', '!!!!!!!!!!!!!!!!!!')
+    test.do_test(caeserROT13,'', '')
+    test.do_test(caeserROT13,'1234567890', '1234567890')
+    test.do_test(caeserROT13,'abcde', 'nopqr')
